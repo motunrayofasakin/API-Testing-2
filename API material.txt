@@ -1,26 +1,52 @@
-API stands for application programming interface, a concept that applies everywhere from command-line tools to enterprise Java code to Ruby on Rails web apps. An API is a way to programmatically interact with a separate software component or resource.
+API stands for application programming interface, a concept that applies everywhere from command-line tools to enterprise Java code to Ruby on Rails web apps. 
+An API is a way to programmatically interact with a separate software component or resource.
 
 
-Unless you write every single line of code from scratch, you’re going to be interacting with external software components, each with its own API. Even if you do write something entirely from scratch, a well-designed software application will have internal APIs to help organize code and make components more reusable. And there are numerous public APIs that allow you to tap into functionality developed elsewhere over the web.
+Unless you write every single line of code from scratch, you’re going to be interacting with external software components, each with its own API. 
+Even if you do write something entirely from scratch, a well-designed software application will have internal APIs to help organize code and make components more reusable. 
+And there are numerous public APIs that allow you to tap into functionality developed elsewhere over the web.
+
 What is an API?
-An API is defined as a specification of possible interactions with a software component. What does that mean, exactly? Well, imagine that a car was a software component. Its API would include information about what it can do—accelerate, brake, turn on the radio, etc. It would also include information about how you could make it do those things. For instance, to accelerate, you put your foot on the gas pedal and push.
+An API is defined as a specification of possible interactions with a software component. 
+What does that mean, exactly? 
+Well, imagine that a car was a software component. 
+Its API would include information about what it can do—accelerate, brake, turn on the radio, etc. 
+It would also include information about how you could make it do those things. 
+For instance, to accelerate, you put your foot on the gas pedal and push.
 
 
-The API doesn’t have to explain what happens inside the engine when you put your foot on the accelerator. That’s why, if you learned to drive a car with an internal combustion engine, you can get behind the wheel of an electric car without having to learn a whole new set of skills. The what and how information come together in the API definition, which is abstract and separate from the car itself.
+The API doesn’t have to explain what happens inside the engine when you put your foot on the accelerator. 
+That’s why, if you learned to drive a car with an internal combustion engine, you can get behind the wheel of an electric car without having to learn a whole new set of skills. 
+The what and how information come together in the API definition, which is abstract and separate from the car itself.
 
-One thing to keep in mind is that the name of some APIs is often used to refer to both the specification of the interactions and to the actual software component you interact with. The phrase “Twitter API,” for example, not only refers to the set of rules for programmatically interacting with Twitter, but is generally understood to mean the thing you interact with, as in “We’re doing analysis on the tweets we got from the Twitter API.”
+One thing to keep in mind is that the name of some APIs is often used to refer to both the specification of the interactions and to the actual software component you interact with. 
+The phrase “Twitter API,” for example, not only refers to the set of rules for programmatically interacting with Twitter, but is generally understood to mean the thing you interact with, as in “We’re doing analysis on the tweets we got from the Twitter API.”
 
 API as abstraction layer
-When it comes to software, APIs are literally everywhere. APIs go hand in hand with one of the most fundamental concepts in computer science: abstraction. Abstraction is just a way of organizing the complexity of a system so that complicated actions can be handled in a simple way. Think of this abstraction like those Amazon Dash Buttons, the battery operated, push-button circuit boards you can use to order staples from Amazon. This is what they look like:
+When it comes to software, APIs are literally everywhere. 
+APIs go hand in hand with one of the most fundamental concepts in computer science: abstraction. 
+Abstraction is just a way of organizing the complexity of a system so that complicated actions can be handled in a simple way. 
+Think of this abstraction like those Amazon Dash Buttons, the battery operated, push-button circuit boards you can use to order staples from Amazon. 
+This is what they look like:
 You order a Dash Button from Amazon and use an app on your smartphone to associate it with your Wi-Fi network, your Amazon account, and a product, say, your favorite brand of paper towels. Then, whenever you want to order more paper towels, you just press the button. The Dash Button connects to the Internet and sends a message to place an order on your account. A few days later, paper towels arrive at your doorstep.
-Like an API, the Dash Button is a blissfully simple interface that hides all kinds of complexity behind the scenes. The ID of the product you ordered must be retrieved from some database. Your delivery address must be pulled from your account. The nearest fulfillment center stocking your paper towels must be determined, then notified to remove an item from the available stock and package it up. Finally, the package must be routed through some combination of airplanes, trucks, and vans along with other packages in a way that ensures that all the packages will reach their destinations efficiently.
+Like an API, the Dash Button is a blissfully simple interface that hides all kinds of complexity behind the scenes. 
+The ID of the product you ordered must be retrieved from some database. 
+Your delivery address must be pulled from your account. The nearest fulfillment center stocking your paper towels must be determined, then notified to remove an item from the available stock and package it up. Finally, the package must be routed through some combination of airplanes, trucks, and vans along with other packages in a way that ensures that all the packages will reach their destinations efficiently.
 
-Now imagine you had to coordinate all of these things as a customer. You’d never order paper towels because it’s too complicated and time consuming and you have better things to do. Luckily, the whole ordeal is abstracted away from you. There is a long, interconnected chain of computer systems and human processes that make those paper towels show up at your doorstep, but all you have to think about is pressing a button.
+Now imagine you had to coordinate all of these things as a customer. 
+You’d never order paper towels because it’s too complicated and time consuming and you have better things to do. 
+Luckily, the whole ordeal is abstracted away from you. 
+There is a long, interconnected chain of computer systems and human processes that make those paper towels show up at your doorstep, but all you have to think about is pressing a button.
 
-This is what APIs are like for programmers. They take an overwhelming amount of complexity and define a relatively simple set of interactions that you can utilize instead of doing it all yourself. In any software project, you’re likely using tens if not hundreds of APIs directly, and each of those APIs relies on other APIs and so on.
+This is what APIs are like for programmers. 
+They take an overwhelming amount of complexity and define a relatively simple set of interactions that you can utilize instead of doing it all yourself. 
+In any software project, you’re likely using tens if not hundreds of APIs directly, and each of those APIs relies on other APIs and so on.
 
 Public APIs and API integration
-APIs are a longstanding concept in computer programming, and they have been part of developers’ toolsets for years. Traditionally, APIs were used to connect code components running on the same machine. With the rise of ubiquitous networking, more and more public APIs, sometimes called open APIs, have become available. Public APIs are outward facing and accessible over the Internet, allowing you to write code that interacts with other vendors’ code online; this process is known as API integration.
+APIs are a longstanding concept in computer programming, and they have been part of developers’ toolsets for years. 
+Traditionally, APIs were used to connect code components running on the same machine. 
+With the rise of ubiquitous networking, more and more public APIs, sometimes called open APIs, have become available. 
+Public APIs are outward facing and accessible over the Internet, allowing you to write code that interacts with other vendors’ code online; this process is known as API integration.
 
 These kinds of code mashups allow users to mix and match functionality from different vendors on their own systems. For instance, if you use the marketing automation software Marketo, you can sync your data there with Salesforce CRM functionality.
 
